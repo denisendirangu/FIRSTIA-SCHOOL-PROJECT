@@ -1,0 +1,10 @@
+.form-input {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+label {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase !important;
+}

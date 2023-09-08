@@ -1,0 +1,288 @@
+@import url("./res/components.css");
+@import url("./res/repeats.css");
+.main {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.header h2 {
+    font-weight: 60px;
+    line-height: 72px;
+    color: #051e2f;
+    justify-self: center;
+}
+.programs {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.prog-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* CSS */
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px,
+        4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+        padding: 0.25em 0.75em;
+    }
+}
+
+.prog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.units-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-block: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.unit-card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.sect-1 {
+    background-color: #252729;
+    color: #fff;
+    padding: 30px;
+    width: 45%;
+    max-width: 45%;
+}
+.sect-1 a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.course-info {
+    padding: 30px;
+    position: relative;
+    width: 55%;
+}
+
+.progress-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+    width: 150px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 3px;
+    height: 5px;
+    width: 100%;
+}
+
+.progress::after {
+    border-radius: 3px;
+    background-color: #252729;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 66%;
+}
+
+.progress-text {
+    font-size: 10px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.btn-card {
+    background-color: #252729;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 1px;
+}
+
+.navigation-back {
+    background-color: #252729;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+}
+.btn-back {
+    width: 300px;
+    background-color: #252729;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+}
+.btn-back:hover {
+    background-color: #ddd;
+    color: #252729;
+}
+.d-button-container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.download {
+    width: 20%;
+    background-color: #252729;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+}
+
+.unit {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.unit-head {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid rgb(86, 86, 86);
+    padding: 2rem;
+}
+.unit-name {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.content {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid rgb(86, 86, 86);
+}
+
+.content h3 {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.content p {
+    font-family: "Gilda Display", serif;
+}
+.registration-section {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.unit-card-reg {
+    font-family: "Josefin Sans", sans-serif !important;
+    box-shadow: #000000 0px 0px 0px 2px inset;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+.unit-card-reg h6 {
+    font-size: 0.5rem;
+}
+.unit-card-reg:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: translateY(10px) translateX(-15px) scale(1.15);
+}
+.card-details {
+    padding: 2rem;
+    width: 100%;
+}
+.register-btn {
+    background-color: #252729;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+}
+.main-section {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-block: 2rem;
+    height: 80vh;
+    overflow-y: scroll;
+}
+.content-owner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+h3 {
+    font-family: "Josefin Sans", sans-serif !important;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Josefin+Sans&family=Nanum+Gothic+Coding&display=swap");
+* {
+    font-family: "Josefin Sans", sans-serif;
+}
+body {
+    width: 100vw;
+    max-width: 100%;
+    height: fit-content;
+}
+.main-nav {
+    background-color: #000000;
+    color: #fff;
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.logo-div {
+    background-color: #252729;
+}
+.logo-div img {
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
+}
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.75fr;
+}
+
+.nav_btn {
+    height: 100px;
+    background-color: #25272900;
+    color: #fff;
+    position: relative;
+    border: none;
+    padding-inline: 2rem;
+}
+.hov {
+    height: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+
+    /* Created with https://www.css-gradient.com */
+    /* Created with https://www.css-gradient.com */
+    background-image: linear-gradient(to right, #00b4db, #0083b0);
+}
+.nav_btn:hover span {
+    height: 25px;
+}
+.menu-div button {
+    height: 100px;
+    width: 100%;
+    background-color: #00000000;
+    color: #fff;
+    border: none;
+    font-size: 6vh;
+}
+.menu-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+}
+.menu-div button:hover {
+    background-color: #3f3f3f;
+}
+.menu-div button i {
+    transition: all 1s ease;
+}
+.menu-div button:hover i {
+    transform: rotate(45deg);
+}
+
+/* footer */
+.footer {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif !important;
+}
+.upper-footer {
+    padding: 4rem;
+    background-color: #252729;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.footer-list h4 {
+    justify-self: center;
+}
+.lower-footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-body {
+    background-color: #080808;
+    color: #fff;
+    height: 80vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
